@@ -12,8 +12,8 @@ class NewVisitorTest(unittest.TestCase):
         self.browser.implicitly_wait(3)
         self.browser.get('http://www.beingboss.club/')
 
-    # def tearDown(self):
-    #     self.browser.quit()
+    def tearDown(self):
+        self.browser.quit()
 
     def testSubscribe(self):
         first_name = self.browser.find_element_by_id("ck_firstNameField")
